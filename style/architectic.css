@@ -10,7 +10,8 @@
     color: white;
     text-align: center;
     font-size: 1.2rem;
-    font-weight: 400px;
+    font-weight: 600px;
+    cursor: pointer;
 }
 /* header style */
 .header {
@@ -62,4 +63,28 @@ nav ul a {
     color: #131313;
     font-size: 1rem;
     font-weight: 400px;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive media quary */
+/* mobile device */
+@media screen and (max-width: 576px) {
+    .header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* tablet or medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
