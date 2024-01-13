@@ -1,7 +1,8 @@
 * {
     font-family: "Work Sans", sans-serif;
 }
-.primary-btn{
+
+.primary-btn {
     width: 180px;
     height: 64px;
     background-color: #FF900E;
@@ -13,6 +14,7 @@
     font-weight: 600px;
     cursor: pointer;
 }
+
 /* header style */
 .header {
     background-color: rgba(255, 144, 14, 0.10);
@@ -37,8 +39,9 @@ nav ul {
     list-style-type: none;
     gap: 30px;
 }
-nav li{
-    color:#424242;
+
+nav li {
+    color: #424242;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
@@ -46,25 +49,29 @@ nav li{
 
 nav ul a {
     text-decoration: none;
-   
+
 }
+
 /* banner style */
-.banner-contant{
+.banner-contant {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-desc{
+
+.banner-desc {
     color: #131313;
     font-size: 1rem;
     font-weight: 400px;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
@@ -72,19 +79,72 @@ nav ul a {
 /* responsive media quary */
 /* mobile device */
 @media screen and (max-width: 576px) {
-    .header{
+    .header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
+
 /* tablet or medium device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .header{
+    .header {
         padding: 50px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
+}
+
+/* main style start */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.teams-container-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.teams-desc {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-desc .gray {
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.teams-desc .black {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.teams-desc .orange {
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.feature-desc {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: justify;
 }
