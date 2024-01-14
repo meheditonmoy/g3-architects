@@ -188,7 +188,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 40px;
     margin-bottom: 100px;
 }
 
@@ -234,8 +234,9 @@ main {
 
 .feature-img img {
     width: 100%;
-    /* height: 100%; */
-    margin-right: 130px;
+    height: 100%;
+    margin-right: 150px;
+    margin-left: 50px;
 }
 
 .ten-year {
@@ -243,6 +244,8 @@ main {
     background: #FF900E;
     width: 300px;
     padding: 30px;
+    position: relative;
+    bottom: 100px;
 }
 
 .ten-year h2 {
@@ -287,7 +290,8 @@ main {
     }
 
     nav,
-    .sponser-img-container {
+    .sponser-img-container,
+    .features-cintainer{
         flex-direction: column;
     }
 
@@ -307,6 +311,30 @@ main {
         padding: 20px;
     }
 
+    .feature-body-container{
+        margin: 0;
+        width: 100%;
+        
+
+    }
+    .feature-card-container .card{
+        padding: 20px;
+        
+    }
+    .feature-img{
+
+        margin: 0 auto;
+        justify-content: center;
+        
+    }
+    }
+    .feature-img img{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        /* margin-left: 30px; */
+           
+    }
     /* fact responsive */
     .fact-section {
         margin-left: 0px;
@@ -335,7 +363,11 @@ main {
 
     nav,
     .teams-container,
-    .sponser-img-container {
+    .sponser-img-container
+     {
+        flex-direction: column;
+    }
+    .features-cintainer{
         flex-direction: column;
     }
 
@@ -347,7 +379,7 @@ main {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
-
+    
     /* fact responsive */
     .fact-section {
         margin-left: 0px;
