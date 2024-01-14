@@ -2,6 +2,19 @@
     font-family: "Work Sans", sans-serif;
 }
 
+/* Sheard style */
+.section-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.section-desc {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400px;
+}
+
 .primary-btn {
     width: 180px;
     height: 64px;
@@ -27,12 +40,6 @@ nav {
     align-items: center;
 }
 
-.nav-title {
-    color: #131313;
-    text-align: center;
-    font-size: 45px;
-    font-weight: 700;
-}
 
 nav ul {
     display: flex;
@@ -65,11 +72,7 @@ nav ul a {
     font-weight: 700;
 }
 
-.banner-desc {
-    color: #727272;
-    font-size: 1rem;
-    font-weight: 400px;
-}
+
 
 .banner img {
     margin-top: 20px;
@@ -79,9 +82,9 @@ nav ul a {
 
 /* main style start */
 main {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
-    background-color: #131313;
+    /* background-color: #131313; */
 }
 
 .teams-container {
@@ -89,8 +92,9 @@ main {
     justify-content: center;
     align-items: center;
     gap: 18px;
-    padding: 0 100px 0 150px;
+    padding: 0 50px 0 100px;
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .teams-container-img {
@@ -98,12 +102,13 @@ main {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     gap: 20px;
-    
-    
+
+
 }
-.teams-container-img img{
+
+.teams-container-img img {
     width: 100%;
-    
+
 }
 
 .teams-desc {
@@ -137,6 +142,62 @@ main {
     text-align: justify;
 }
 
+/* facts style */
+.fact-section {
+    margin-left: 50px;
+}
+/* .section-desc{
+    width: 50vw;
+    align-items: center;
+} */
+
+.fact-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/* fact section style */
+.fact-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fact-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 20px;
+}
+
+.fact-card-container .card-stars {
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fact-card-container .card-title {
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+/* sponsor style */
+.sponser-section{
+    text-align: center;
+}
+.sponser-img-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+.sponser-img-container img{
+    width: 150px;
+}
 
 /* responsive media quary */
 /* mobile device */
@@ -145,21 +206,41 @@ main {
         padding: 20px;
     }
 
-    nav{
+    nav,
+    .sponser-img-container
+    {
         flex-direction: column;
     }
-    .teams-container{
+
+    .teams-container {
         flex-direction: column;
         padding: 0;
     }
-    .teams-container-img{
+
+    .teams-container-img {
         grid-template-columns: 1fr;
         width: 100%;
-        padding: 0 ;
+        padding: 0;
         margin: 0;
     }
-    .teams-desc{
+
+    .teams-desc {
         padding: 20px;
+    }
+    /* fact responsive */
+    .fact-section {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .fact-section{
+        padding-left: 0px;
+    }
+    .fact-card-container{
+        flex-direction: column;
+    }
+    .fact-card-container .card {
+        padding: 20px;
+        margin-top: 10px;
     }
 }
 
@@ -170,11 +251,35 @@ main {
     }
 
     nav,
-    .teams-container
+    .teams-container,
+    .sponser-img-container
     {
         flex-direction: column;
     }
-    .teams-container-img{
+    .teams-container {
+        padding:0 50px;
+    }
+    .teams-container-img {
         grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    /* fact responsive */
+    .fact-section {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .fact-section{
+        padding-left: 0px;
+    }
+    .fact-card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        column-gap: 5px;
+        
+    }
+    .fact-card-container .card {
+        padding: 20px;
+        margin-top: 10px;
     }
 }
